@@ -10,7 +10,7 @@ def extract_text(pdf_filename):
     path = os.path.join(temp_folder, pdf_filename)
 
     for page_png in convert_from_path(path):
-        text = pytesseract.image_to_string(page_png, lang='eng')
+        text = pytesseract.image_to_string(page_png, lang='ces')
         print(text)
 
         result_text.append(text)
