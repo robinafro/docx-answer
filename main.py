@@ -9,7 +9,10 @@ def answer(file_path):
 
     result_pages = extract.extract_text(".".join(filename.split(".")[:-1]) + ".pdf")
 
-    print(result_pages)
+    for i, page in enumerate(result_pages):
+        print(page)
+        print()
 
 if __name__ == "__main__":
-    answer(input("Enter a file path: "))
+    # answer(input("Enter a file path: "))
+    answer("/home/robin/Downloads/test4.docx")
